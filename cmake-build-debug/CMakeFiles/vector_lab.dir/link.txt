@@ -1,3 +1,0 @@
-"Z:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\vector_lab.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\vector_lab.dir/objects.a @CMakeFiles\vector_lab.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\vector_lab.dir/objects.a -Wl,--no-whole-archive -o vector_lab.exe -Wl,--out-implib,libvector_lab.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\vector_lab.dir\linklibs.rsp

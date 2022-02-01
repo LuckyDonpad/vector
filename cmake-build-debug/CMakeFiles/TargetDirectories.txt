@@ -1,3 +1,0 @@
-E:/clion projects/vector_lab/cmake-build-debug/CMakeFiles/vector_lab.dir
-E:/clion projects/vector_lab/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/clion projects/vector_lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir
