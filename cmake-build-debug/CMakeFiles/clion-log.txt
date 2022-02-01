@@ -1,4 +1,0 @@
-"Z:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" "E:\clion projects\vector_lab"
--- Configuring done
--- Generating done
--- Build files have been written to: E:/clion projects/vector_lab/cmake-build-debug
