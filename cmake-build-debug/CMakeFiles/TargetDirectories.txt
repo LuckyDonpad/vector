@@ -1,3 +1,8 @@
 E:/clion projects/vector_lab/cmake-build-debug/CMakeFiles/vector_lab.dir
 E:/clion projects/vector_lab/cmake-build-debug/CMakeFiles/edit_cache.dir
 E:/clion projects/vector_lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/clion projects/vector_lab/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
+E:/clion projects/vector_lab/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir
+E:/clion projects/vector_lab/cmake-build-debug/libs/data_structures/CMakeFiles/vector.dir
+E:/clion projects/vector_lab/cmake-build-debug/libs/data_structures/CMakeFiles/edit_cache.dir
+E:/clion projects/vector_lab/cmake-build-debug/libs/data_structures/CMakeFiles/rebuild_cache.dir
