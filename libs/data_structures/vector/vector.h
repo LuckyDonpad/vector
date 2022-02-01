@@ -4,7 +4,7 @@
 
 #ifndef VECTOR_LAB_VECTOR_H
 #define VECTOR_LAB_VECTOR_H
-
+#include <stdbool.h>
 #include <stdio.h>
 
 
@@ -29,5 +29,13 @@ void shrinkToFit(vector *v);
 //освобождает память, выделенную вектору v
 void deleteVector(vector *v);
 
+// возвращает значение "истина" если вектор является пустым (его размер равен нулю) иначе "ложь"
+bool isEmpty(vector *v);
+
+// возвращает значение "истина" если вектор является полным (его размер равен вместимости) иначе "ложь"
+bool isFull(vector *v);
+
+// возвращает i-ый элемент вектора v
+int getVectorValue(vector *v, size_t i);
 
 #endif //VECTOR_LAB_VECTOR_H

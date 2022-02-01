@@ -6,7 +6,9 @@
 int
 main() {
     vector vector1 = createVector(10);
-    reserve(&vector1, 0);
+    vector1.size = 10;
+    vector1.data[4] = 42;
+    printf("%d", getVectorValue(&vector1, 4));
 
 
     return 0;

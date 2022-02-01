@@ -49,5 +49,16 @@ void deleteVector(vector *v){
     v->data = NULL;
 }
 
+bool isEmpty(vector *v){
+    return v->size == 0;
+}
+
+bool isFull(vector *v){
+    return (v->size) == v->capacity;
+}
+
+int getVectorValue(vector *v, size_t i){
+    return v->data[i];
+}
 
 
