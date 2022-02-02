@@ -20,9 +20,9 @@ vector createVector(size_t n) {
 
 
 void reserve(vector *v, size_t newCapacity) {
-    realloc(v->data, newCapacity);
+    v->data = realloc(v->data, newCapacity);
     v->capacity = newCapacity;
-    if(v->size < v->capacity)
+    if (v->size > v->capacity)
         v->size = v->capacity;
 }
 
@@ -75,11 +75,11 @@ int *atVector(vector *v, size_t index) {
         return &v->data[index];
 }
 
-int* back(vector *v){
+int *back(vector *v) {
     return &v->data[v->size];
 }
 
-int* front(vector *v){
+int *front(vector *v) {
     return &v->data[0];
 }
 
