@@ -18,23 +18,12 @@ vector createVector(size_t n) {
     } else return (vector) {NULL, 0, 0};
 }
 
-//сделать короче realloc(0)
+
 void reserve(vector *v, size_t newCapacity) {
-    if (newCapacity) {
-        v->data = realloc(v->data, sizeof(int) * newCapacity);
-        v->capacity = newCapacity;
-        if (!v->data) {
-            fprintf(stderr, "bad alloc ");
-            exit(1);
-        }
-        if (newCapacity < v->size)
-            v->size = newCapacity;
-    } else {
-        free(v->data);
-        v->data = NULL;
-        v->size = 0;
-        v->capacity = 0;
-    }
+    realloc(v->data, newCapacity);
+    v->capacity = newCapacity;
+    if(v->size < v->capacity)
+        v->size = v->capacity;
 }
 
 void clear(vector *v) {
