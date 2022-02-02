@@ -38,6 +38,7 @@ void test_popBack_notEmptyVector() {
     assert (v.capacity == 1);
 }
 
+void test_atVector_IndexError()
 
 int
 main() {

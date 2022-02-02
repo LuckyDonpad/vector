@@ -70,12 +70,20 @@ void pushBack(vector *v, int x) {
     v->size++;
 }
 
-void popBack(vector *v){
-    if(isEmpty(v)){
+void popBack(vector *v) {
+    if (isEmpty(v)) {
         fprintf(stderr, "vector is already empty");
         exit(1);
     } else
         v->size--;
+}
+
+int *atVector(vector *v, size_t index) {
+    if (v->size < index || index < 0) {
+        fprintf(stderr, "IndexError: a[%lld] is not exists", index);
+        exit(1);
+    } else
+        return &v->data[index];
 }
 
 

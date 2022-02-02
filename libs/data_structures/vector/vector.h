@@ -44,4 +44,7 @@ void pushBack(vector *v, int x);
 //убирает элемент x в конец вектора v
 void popBack(vector *v);
 
+// возвращает указатель на index-ый элемент вектора v
+int *atVector(vector *v, size_t index)
+
 #endif //VECTOR_LAB_VECTOR_H
