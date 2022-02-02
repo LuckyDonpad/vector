@@ -70,4 +70,12 @@ void pushBack(vector *v, int x) {
     v->size++;
 }
 
+void popBack(vector *v){
+    if(isEmpty(v)){
+        fprintf(stderr, "vector is already empty");
+        exit(1);
+    } else
+        v->size--;
+}
+
 

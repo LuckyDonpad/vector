@@ -42,6 +42,6 @@ int getVectorValue(vector *v, size_t i);
 void pushBack(vector *v, int x);
 
 //убирает элемент x в конец вектора v
-void popBack(vector *v)
+void popBack(vector *v);
 
 #endif //VECTOR_LAB_VECTOR_H

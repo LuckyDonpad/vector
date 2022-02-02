@@ -13,7 +13,7 @@ void test_pushBack_emptyVector() {
 }
 
 
-void test_pushBack_fullVector(){
+void test_pushBack_fullVector() {
     vector vector1 = createVector(1);
     vector1.size = 1;
     vector1.data[0] = 42;
@@ -24,16 +24,24 @@ void test_pushBack_fullVector(){
     assert(vector1.size == 2);
 }
 
-void test_pushBack(){
+void test_pushBack() {
     test_pushBack_emptyVector();
     test_pushBack_fullVector();
+}
+
+void test_popBack_notEmptyVector() {
+    vector v = createVector(0);
+    pushBack(&v, 10);
+    assert (v.size == 1);
+    popBack(&v);
+    assert (v.size == 0);
+    assert (v.capacity == 1);
 }
 
 
 int
 main() {
-    test_pushBack_emptyVector();
-    test_pushBack_fullVector();
+    test_popBack_notEmptyVector();
 
     return 0;
 }
