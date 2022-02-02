@@ -45,6 +45,12 @@ void pushBack(vector *v, int x);
 void popBack(vector *v);
 
 // возвращает указатель на index-ый элемент вектора v
-int *atVector(vector *v, size_t index)
+int *atVector(vector *v, size_t index);
+
+// возвращает указатель на последний элемент вектора v
+int* back(vector *v);
+
+// возвращает указатель на первый элемент вектора v
+int* front(vector *v);
 
 #endif //VECTOR_LAB_VECTOR_H

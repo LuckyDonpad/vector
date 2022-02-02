@@ -75,4 +75,12 @@ int *atVector(vector *v, size_t index) {
         return &v->data[index];
 }
 
+int* back(vector *v){
+    return &v->data[v->size];
+}
+
+int* front(vector *v){
+    return &v->data[0];
+}
+
 
