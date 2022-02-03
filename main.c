@@ -1,7 +1,4 @@
-#include <stdio.h>
 #include "libs/data_structures/vector/vector.h"
-#include <stdint.h>
-#include <malloc.h>
 #include <assert.h>
 
 void test_pushBack_emptyVector() {
@@ -47,7 +44,7 @@ void test_popBack_notEmptyVector() {
     assert (v.capacity == 1);
 }
 
-void test_atVector_requestToLastElement(){
+void test_atVector_requestToLastElement() {
     vector vector1 = createVector(3);
     vector1.data[0] = 1;
     vector1.data[1] = 1;
@@ -57,21 +54,21 @@ void test_atVector_requestToLastElement(){
     assert(atVector(&vector1, 2) == &vector1.data[2]);
 }
 
-void test_back_oneElementInVector(){
+void test_back_oneElementInVector() {
     vector vector1 = createVector(1);
     vector1.data[0] = 1;
 
     assert(back(&vector1) == &vector1.data[0]);
 }
 
-void test_front_oneElementInVector(){
+void test_front_oneElementInVector() {
     vector vector1 = createVector(1);
     vector1.data[0] = 1;
 
     assert(front(&vector1) == &vector1.data[0]);
 }
 
-void test(){
+void test() {
     test_pushBack();
     test_back_oneElementInVector();
     test_front_oneElementInVector();
